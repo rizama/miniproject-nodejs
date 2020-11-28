@@ -1,6 +1,6 @@
-# Express API Starter
+# Mini Project Nodejs
 
-Includes API Server utilities:
+## Includes API Server utilities:
 
 * [morgan](https://www.npmjs.com/package/morgan)
   * HTTP request logger middleware for node.js
@@ -20,25 +20,25 @@ Development utilities:
 * [supertest](https://www.npmjs.com/package/supertest)
   * HTTP assertions made easy via superagent.
 
-## Setup
+### Setup
 
 ```
 npm install
 ```
 
-## Lint
+### Lint
 
 ```
 npm run lint
 ```
 
-## Test
+### Test
 
 ```
 npm run test
 ```
 
-## Development
+### Development
 
 ```
 npm run dev
