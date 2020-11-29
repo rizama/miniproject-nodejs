@@ -8,7 +8,7 @@ const rootPath = __dirname;
 
 const responseError = (message = "something went wrong") => {
     return {
-        code: 500,
+        code: 400,
         mesage: message,
         data: null
     };
@@ -54,7 +54,7 @@ router.post('/', (req, res) => {
         });
 
     } catch (error) {
-        return responseError(error)
+        return res.status(400).responseError(error)
     }
 });
 
@@ -89,7 +89,7 @@ router.get('/', (req, res) => {
         });
 
     } catch (error) {
-        return responseError();
+        return res.status(400).responseError();
     }
 });
 

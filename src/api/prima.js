@@ -15,7 +15,7 @@ const checkIsPrime = (number) => {
 
 const responseError = (message = "something went wrong") => {
     return {
-        code: 500,
+        code: 400,
         mesage: message,
         data: null
     };
@@ -26,11 +26,11 @@ router.get('/', (req, res) => {
     const patternNumber = /^\d+$/;
 
     if (!req.query.start) {
-        return res.json(responseError("Need query params 'start'. e.g localhost:5000/api/prime?start=100"));
+        return res.status(400).json(responseError("Need query params 'start'. e.g localhost:5000/api/prime?start=100"));
     } if (parseInt(req.query.start) <= 0) {
-        return res.json(responseError("Number must be bigger than 0."));
+        return res.status(400).json(responseError("Number must be bigger than 0."));
     } if (!patternNumber.test(req.query.start)) {
-        return res.json(responseError("Value must be a Number"));
+        return res.status(400).json(responseError("Value must be a Number"));
     }
 
     let start = parseInt(req.query.start) + 1;
