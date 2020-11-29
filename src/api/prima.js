@@ -15,7 +15,7 @@ const checkIsPrime = (number) => {
 
 const responseError = (message = "something went wrong") => {
     return {
-        code: 400,
+        code: 500,
         mesage: message,
         data: null
     };
