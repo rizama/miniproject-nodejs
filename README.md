@@ -39,6 +39,8 @@ npm run dev
 ```
 ```url
 [GET] http://localhost:5000/api/prime?start=5
+or
+[GET] http://api-miniproject.rizkysam.web.id/api/prime?start=5
 ```
 
 ### Sample Response
@@ -56,7 +58,10 @@ npm run dev
 [ENDPOINT] /api/users
 ```
 ```url
+(You can use Postman or similar to send the body)
 [POST] http://localhost:5000/api/users
+or
+[POST] http://api-miniproject.rizkysam.web.id/api/users
 ```
 #### Sample Body
 ```json
@@ -92,6 +97,8 @@ npm run dev
 ```
 ```url
 [GET] http://localhost:5000/api/users?page=1&limit=5
+or
+[GET] http://api-miniproject.rizkysam.web.id/api/users?page=1&limit=5
 ```
 #### Sample Response
 ```json
